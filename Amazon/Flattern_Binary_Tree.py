@@ -21,6 +21,8 @@ def flatten_bst(root):
     root.right.left = None
     # save the whole right sub tree in the right most node
     root.right.right.right = temp
+    root.right.right.right.right = root.right.right.right.left
+    root.right.right.right.left = None
 
 
 n5 = Node(5)
