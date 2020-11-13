@@ -9,8 +9,10 @@ class Node:
 
 
 def bst_numbers_sum(root, num=0):
+    # check if it is a leaf node or not
     if root == None:
         return 0
+    # Changing the digit to its place value
     num = (num*10 + root.value)
 
     if root.left is None and root.right is None:
